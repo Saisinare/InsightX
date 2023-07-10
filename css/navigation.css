@@ -1,0 +1,264 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url('../fonts/GTWalsheimPro-Medium.ttf');
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:lighter;
+    margin: 0;
+    padding: 0;
+    font-family: 'MyFont';
+    background-color: black;
+    overflow-x:hidden;
+  }
+  
+  p{
+    margin-left: 2vw;
+  }
+  header {
+    color: #fff;
+    width: 100%;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    display: flex ;
+    padding: 0.6rem;
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    position: absolute;
+    z-index: 15;
+        transition: all 200ms ease-in;
+  }
+  @keyframes fadein {
+    from{
+        margin-top: -10rem;
+    }to{
+        margin-top: 0;
+    }
+  }
+  nav{
+    border-radius: 0.5rem;
+    width: 93%;
+    background-color: #221824f3;
+    height: 70px;
+    display:flex;
+    position: sticky;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 2rem;
+    transition: all 200ms ease-in;
+}
+  h1 {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100%;
+    transition: all 200ms ease-in;
+  }
+  
+  nav ul li {
+    margin-right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .current :first-child{
+    background:linear-gradient(30deg,#0d0152,rgb(4, 0, 255)) ;
+    box-shadow:  0 4px 8px 0 rgba(4, 0, 255, 0.596), 0 6px 20px 0 rgba(38, 0, 255, 0.507);
+  }
+  nav ul li a {
+    height: 50%;
+    width: 7rem;
+    border-radius: 0.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'MyFont';
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+  }
+  nav ul li:nth-child(1){
+    animation-name: fadein;
+    animation-delay: 200ms;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+  }
+  nav ul li:nth-child(2){
+    animation-name: fadein;
+    animation-delay: 400ms;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+  }
+  nav ul li:nth-child(3){
+    animation-name: fadein;
+    animation-delay: 300ms;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+  }
+  nav ul li:nth-child(4){
+    animation-name: fadein;
+    animation-delay: 250ms;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+  }
+
+
+  a{
+    transition: color 0.3s, color 0.3s;
+  }
+ a:hover{
+    color: rgb(194, 196, 194);
+  }
+  a img {
+    height: 1.6rem;
+  }
+  h1 {
+    margin-top: 20px;
+    padding-left: 2vw;
+  }
+#login{
+  float: right;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.branding{
+    font-size: 2rem;
+    margin-right: 3rem;
+}
+.hamburger{
+  transition: 0.3s;
+  display: none;
+  cursor: pointer;
+}
+.bar{
+    background-color: white;
+  transition: 0.3s;
+  height: 3px;
+  width: 1.5rem;
+  margin: 5px;
+  display: block;
+  border-radius: 0.1rem;
+}
+header{
+  position: fixed;
+  width: 100vw;
+  top: 0;
+}
+
+@keyframes easein {
+  from{
+    margin-right: -10vh;
+  }
+  to{
+    margin-right: 0;
+  }
+}
+.userAction{
+    background :blue;
+    color: rgb(192, 192, 196);
+    box-shadow:  0 4px 8px 0 rgba(4, 0, 255, 0.596), 0 6px 20px 0 rgba(38, 0, 255, 0.507);
+    transition: all 300ms ease-in-out;
+    animation-name: easein;
+    animation-delay: 250ms;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+.userAction:hover{
+  color: white;
+}
+#signup{
+    margin-left: 25vw;
+}
+
+@media(max-width:768px){
+  #signup{
+    margin-left: 0;
+  }
+  nav{
+    padding: 0 1rem;
+    width: 87vw;
+    justify-content: space-between;
+  }
+  .hamburger{
+
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2){ 
+    transition: 0.3s ease-out;
+    margin-left: -3vw;
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1){
+    transition: 0.3s ease;
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3){
+    transition: 0.3s ease;
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .navlist{
+    transition: 0.3s ;
+    display: flex;
+    position: fixed;
+    padding: 3rem 0;
+    top: 6rem;
+    height: 80vh;
+    background-color: black;
+    left: -100%;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navlist li {
+    margin-top: -100rem;
+    padding: 0;
+  }
+  .navlist.active{
+    left: 0;
+  }
+  .userlistactionlist{
+    border: none;
+  }
+
+  .navlist li{
+    margin: 0;
+    height: 3rem;
+    margin: 1rem;
+    width: 100vw;
+
+  }
+  .navlist .navitem{
+    border-bottom: 1px solid rgb(36, 35, 35);
+  }
+  .navlist li a{
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    width: 40vw;
+    height: 3rem;
+
+  }
+
+}

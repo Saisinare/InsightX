@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./css/signup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form">
+        <div class="login-form">
+          <div class="form-head">
+            <h1>Welcome To MLA</h1>
+            <p>Create Your Account</p>
+          </div>
+          <form action="">
+          <div class="form-body">
+            <div class="field">
+                <label for="">Username</label>
+                <br>
+                <input type="email" name="username" id="usernameInput" placeholder="Enter Your Username">
+            </div>
+            <div class="field">
+                <label for="">Username</label>
+                <br>
+                <input type="email" name="email" id="emailInput" placeholder="yourEmail@gmail.com">
+            </div>
+            <div class="field">
+                <label for="">Password</label>
+                <br>
+                <input type="password" name="password" id="password" placeholder="Password"><span id="showpass" >show</span>
+            </div>
+            <div class="form-footer">
+                <a href="#" id="forgotpassword">forgot password </a>
+                    <button type="submit" class="submit-btn">Create new Account</button>
+                    <a href="login.html" id="logindirect">Already Have Account ? login</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="addon">
+          <img src="./img/wave.png" id="wave">
+          
+          <h1>Easily Predict Machine Faliure Rate!</h1>
+          <p>Accurate Machine Failure Predictions.</p>
+        <img src="./img/addonBackground.JPG" alt="" id="bg">
+      </div>
+    </div>
+  </body>
+  <script>
+    const pass = document.querySelector('#password')
+    const confpass = document.querySelector('#confirmPassword')
+    const showpassbtn = document.querySelector('#showpass')
+    const showconfpassbtn = document.querySelector('#showconfpass')
+    let passflag = false;
+    let cpassflag = false;
+    showpassbtn.addEventListener('click',()=>{
+        if(passflag==false){
+            pass.type = 'text'
+            passflag=true
+        }
+        else{
+            pass.type = 'password'
+            passflag=false
+        }
+    })
+
+    showconfpassbtn.addEventListener('click',()=>{
+        if(cpassflag==false){
+            confpass.type = 'text'
+            cpassflag=true
+        }
+        else{
+            confpass.type = 'password'
+            cpassflag=false
+        }
+    })
+  </script>
+</html>
