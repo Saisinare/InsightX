@@ -1,0 +1,164 @@
+body{
+    overflow: hidden;
+}
+@font-face {
+    font-family: 'MyFont';
+src: url('../fonts/GTWalsheimPro-Medium.ttf');
+}
+
+*{
+    font-family: 'MyFont';
+}
+.page{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+.formcard{
+    padding: 0;
+}
+.formcard form{
+    display: flex;
+    row-gap: 1rem;
+    flex-direction: column;
+    width: 100vw;
+    display: flex;
+}
+
+.infocard{
+    width: 40vw;
+    border-top-left-radius:1rem ;
+    border-bottom-left-radius:1rem ;
+    background-color: blue;
+    overflow: hidden;
+}
+.circle1{
+    height: 25rem;
+    width: 25rem;
+    background:linear-gradient(30deg,#83c7d3,rgb(188, 240, 183));
+    border-radius: 50%;
+    transform: translateY(1rem) translateX(22rem);
+    /* position: absolute; */
+}
+.circle2{
+    height: 10rem;
+    width: 10rem;
+    background:rgb(102, 102, 233);
+    border-radius: 50%;
+    opacity:0.99;
+    transform:translateX(20rem) translateY(-25rem) ;
+    
+}
+.head{
+    height: 20vh;
+    padding-top: 5rem;
+    color:#ccc;
+}
+.head h1{
+    color: white;
+    font-size: 42px;
+}
+.info{
+    padding-top: 5vh;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.detail-card{
+    height: 6vh;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    padding-left: 3rem;
+}
+.detail-card-img{
+    width: 3vw;
+}
+.detail-card-data{
+    width: 30vw;
+}
+.formcard{
+    width: 60vw;
+    padding-top: 15vh;
+    padding-left: 5vw;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background-color: rgb(2, 2, 12);
+}
+.formcard .name ,.contact-details {
+    width: 50vw;
+    display: flex;
+    height: 20vh;
+    justify-content: space-between;
+    color: white;
+}
+.formcard .name input,.contact-details input{
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid rgb(17, 17, 17);
+    outline: none;
+    height: 3rem;
+    width: 20vw;
+    transition: all 0.5s ease-in;
+    padding: 0 1rem;
+    color: #ccc;
+}
+.formcard .name input:hover,.contact-details input:hover{
+    border-bottom: 1px solid rgb(47, 47, 75);
+}
+.message{
+    color: white;
+}
+#message{
+    width: 50vw;
+    padding: 1rem;
+    background-color: rgb(19, 18, 18);
+    outline: none;
+    border-radius: 0.5rem;
+    border: none;
+    border-bottom: 1px solid rgb(17, 17, 17);
+    color: white;
+    transition: all 0.5s ease-in;
+    height: 10vh;
+}
+.send-button{
+    padding: 1rem 7rem;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'myFont';
+    border-radius: 0.5rem;
+    border: none;
+    background: radial-gradient(circle,blue,rgb(72, 27, 236));
+    font-weight: bold;
+    color: #ccc;
+    transition: all 1s ease-out;
+}
+input{
+    box-sizing: content-box;
+}
+#message:hover{
+    border-bottom: 1px solid rgb(47, 47, 75);
+
+}
+@media (max-width:768px) {
+    .page{
+        padding: 0;
+        justify-content: flex-start;
+    }
+    #email,#phone,#firstname,#lastname,#message{
+        width: 80vw;
+        /* box-sizing: content-box; */
+    }
+    .infocard{
+        display: none;
+    }
+    .name{
+        flex-direction: column;
+    }
+    .contact-details{
+        flex-direction: column;
+    }
+}
