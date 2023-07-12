@@ -186,16 +186,18 @@ button{
     background-color: rgb(237, 215, 250);
     animation-name: cardin;
     animation-delay: 350ms;
-    animation-duration: 1s;
+    animation-duration: 2.5s;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
 }  
 @keyframes cardin {
     from{
-        margin-left: -5rem;
-        transform: rotate(30deg);
+      opacity: 0;
+      margin-left: -3rem;
+      transform: rotate(30deg);
     }
     to{
+      opacity: 1;
         transform: rotate(0deg);
     }
 }
@@ -310,6 +312,7 @@ button{
 #goto-app-btn:hover{
   color: white;
 }
+
 .lastpage .foot{
   display: flex;
   align-items: center;

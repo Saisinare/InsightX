@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="stylesheet" href="css/navigation.css" />
+  <link rel="stylesheet" href="css/explore.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <body>
+    <header>
+      <nav>
+        <div class="branding">InsightX</div>
+        <ul class="navlist">
+          <li class="navitem"><a href="/">Home</a></li>
+          <li class="navitem"><a href="aboutus">About</a></li>
+          <li class="navitem"><a href="contactus">Contact Us</a></li>
+          <li class="navitem current"><a href="explore">Explore</a></li>
+          <li class="userlistactionlist">
+            <a href="signup.html" class="userAction" id="signup">Sign Up</a>
+          </li>
+          <li class="userlistactionlist">
+            <a href="login.html" class="userAction">Login</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+    <div class="presentation">
+      <div class="page" id="page1">
+        <h1>Indroducing InsightX</h1>
+        <p>
+          "a cutting-edge tool designed to provide valuable insights into your
+          industrial machine operations"
+        </p>
+        <button type="button" id="goto-app-btn">Try insightX Now</button>
+        <!-- <img src="/img/presentationrobots.png" alt="" id="introImg"> -->
+      </div>
+      <div class="page page2" id="page2">
+        <div class="image">
+          <img src="img/presentationrobots.png" alt="" class="img" />
+        </div>
+        <div class="description">
+          <h2>Features</h2>
+          <div class="feature-card">
+            <div class="card-img">Proactive maintainance</div>
+            <div class="feature-detail">
+              Our predictive maintenance tool allows businesses to take
+              proactive measures to ensure their machines are running at peak
+              performance, minimizing the risk of costly downtime.
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-detail">
+              Our tool harnesses vast amounts of data to provide accurate
+              insights into machine performance, providing valuable information
+              for enhancing operations and optimizing maintenance schedules.
+            </div>
+            <div class="card-img2">Data-Driven Insights</div>
+          </div>
+          <div class="feature-card">
+            <div class="card-img">Intuitive Dashboard</div>
+            <div class="feature-detail">
+              Our user-friendly dashboard provides a clear and concise overview
+              of machine performance, allowing for quick and informed decisions.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page page3" id="page3">
+        <h1 class="modelhead">02 Distinct Models</h1>
+      </div>
+      <div class="page page4" id="page4">
+        <div class="model-card">
+          <div class="card-heading">01 Balanced Bagging</div>
+          <div class="card-detail">
+            <div class="card-feature">higher recall rate</div>
+            <div class="card-feature">
+              Ensemble method combining multiple classifiers.
+            </div>
+            <div class="card-feature">
+              Focus on capturing as many maintenance needs or failure instances
+              as possible.
+            </div>
+            <div class="card-feature">Effective for imbalanced datasets.</div>
+            <div class="card-feature">
+              Utilizes a voting mechanism to combine predictions.
+            </div>
+            <div class="card-feature">
+              Minimizes the risk of missed maintenance events.
+            </div>
+          </div>
+        </div>
+        <div class="model-card">
+          <div class="card-heading">02 Balanced Random Forest</div>
+          <div class="card-detail">
+            <div class="card-feature">higher precision rate</div>
+            <div class="card-feature">
+              Ensemble method based on random forest algorithm.
+            </div>
+            <div class="card-feature">
+              Emphasizes minimizing false positives and unnecessary maintenance
+              interventions.
+            </div>
+            <div class="card-feature">
+              Suitable for cost efficiency and resource optimization..
+            </div>
+            <div class="card-feature">
+              Handles imbalanced datasets effectively.
+            </div>
+            <div class="card-feature">
+              Provides a higher precision rate for maintenance predictions.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="js/explore.js"></script>
+</html>

@@ -1,0 +1,221 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url('../fonts/GTWalsheimPro-Medium.ttf');
+}
+.page{
+
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow:4px 1px 2px black;
+    scroll-snap-align:start;
+    background-color: black;
+    box-shadow: 0px -6px 5px 0px rgba(0,0,0,0.75);
+    overflow: hidden;
+}
+#page1 h1{
+    font-size: 5rem;
+    color: white;
+    text-shadow: 0 0 0.15em #1da9cc;
+    animation: textin 5s ease-in-out forwards;
+}
+#page1 p{
+    animation: textin 5s ease-in-out forwards;
+}
+#page2{
+    flex-direction: row;
+    overflow: hidden;
+
+}
+.modelhead{
+    transition: all 5s ease-in-out;
+    opacity: 0;
+}
+.page .image{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page .image img{
+    height: 100vh;
+    margin-top: -100vh;
+    transition-delay:300ms ;
+    transition: all 2s ease-in-out;
+    /* animation: slideinimage 1s ease-in-out forwards; */
+}
+.page .description{
+    transition-delay:3ms ;
+    width: 50%;
+    height: 100vh;
+    transition: all 2s ease-in-out;
+    margin-top: 150rem;
+    background-color: black;
+    color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+.page .description h2{
+    font-size: 36px;
+}
+.card-img{
+    width: 25rem;
+    height: 100%;
+    background-color: #1100f8;
+    border-top-right-radius: 10rem;
+    border-bottom-right-radius: 10rem;
+    display: flex;
+    align-items: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'MyFont';
+    font-weight: bold;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .card-img2{
+    width: 25rem;
+    height: 100%;
+    background-color: #1100f8;
+    border-top-left-radius: 10rem;
+    border-bottom-left-radius: 10rem;
+    display: flex;
+    align-items: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'MyFont';
+    font-weight: bold;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .feature-detail{
+    padding-top: 3rem;
+    padding-left: 1.5rem;
+    text-align: center;
+  }
+.feature-card{
+    display: flex;
+    height:20vh;
+    width: 90%;
+    background-color: rgb(5, 6, 10);
+    border: 1px solid black;
+}
+#goto-app-btn{
+    padding: 2rem 7rem;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'myFont';
+    border-radius: 0.5rem;
+    border: none;
+    background: radial-gradient(circle,blue,rgb(72, 27, 236));
+    font-weight: bold;
+    color: #ccc;
+    transition: all 1s ease-out;
+  }
+  #goto-app-btn:hover{
+    color: white;
+  }
+@keyframes textin {
+    from{
+        transform: rotate(5deg);
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        margin-left: 0;
+    }
+}
+#page1{
+    height: 105vh;
+    color: #ccc;
+    background-color: black;
+    font-family: 'MyFont';
+    overflow: hidden;
+}
+#page2{
+    height: 110vh;
+}
+#page3{
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+}
+#page3 h1 {
+    color:#000000;
+    font-size: 9rem;
+    text-shadow: -1px -1px 0 #afb1f0, 1px -1px 0 #abadf1, -1px 1px 0 #b2b3fa, 1px 1px 0 #c1c2f1;
+}
+html{
+    scroll-snap-type:y proximity;
+    transition: all 500ms ease-in-out;
+}
+#page4{
+    height: 85vh;
+    flex-direction: row;
+    padding-top: 15vh;
+    justify-content: center;
+    column-gap: 10rem;
+    opacity: 0;
+    transition: all 2s ease-in-out;
+}
+.model-card{
+    width: 45%;
+    height: 95%;
+    background-color: rgb(10, 12, 20);
+    border-radius: 2rem;
+}
+
+#page4 .model-card .card-heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+    text-align: center;
+   color: #ccc;
+    font-size: 2rem;
+}
+#page4 .model-card .card-detail {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.2rem;
+    justify-content: center;
+}
+#page4 .model-card .card-detail .card-feature{
+    padding: 1rem;
+    height: 2rem;
+    width: 85%;
+    border-radius: 0.5rem;
+    color: #ccc;
+    background-color: black;
+    border: 1px solid black;
+}
+.stickypage{
+    top: 0;
+    position: sticky;
+}
+
+@keyframes page2imgslidein {
+    from{
+        margin-top: -200rem;
+    }
+    to{
+        margin-top: 0;
+    }
+}
