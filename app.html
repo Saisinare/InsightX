@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/navigation.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <script
+      src="https://kit.fontawesome.com/yourcode.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="branding">InsightX</div>
+        <ul class="navlist">
+          <li class="navitem"><a href="index.html">Home</a></li>
+          <li class="navitem"><a href="aboutUs.html">About</a></li>
+          <li class="navitem"><a href="contactUs.html">Contact Us</a></li>
+          <li class="navitem"><a href="explore.html">Explore</a></li>
+          <li class="userlistactionlist">
+            <a href="signup.html" class="userAction" id="signup">Sign Up</a>
+          </li>
+          <li class="userlistactionlist">
+            <a href="login.html" class="userAction">Login</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+    <div class="page">
+      <form action="">
+      <div class="container">
+        <div class="form-container">
+          <div class="input-section">
+          <div class="selection-fields">
+            <label for="name"> Name </label>
+            <div class="field">
+              <input type="text" id="name" name="name" placeholder="Enter Machine Name"/>
+            </div>
+            <label for="type">Model</label>
+            <div class="field">
+              <input type="text" name="model" id="model" value="Balanced Bagging" readonly hidden />
+              <div class="model-selection">
+                <div class="model-option model-selected" id="model1">
+                  Balanced Bagging
+                </div>
+                <div class="model-option" id="model2">
+                  Balanced Randome Forest
+                </div>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="type">Type</label><br />
+              <input type="text" name="type" id="type" value="low" readonly hidden />
+              <div class="type-selection">
+                <div class="option type-selected" id="low">low</div>
+                <div class="option" id="medium">Medium</div>
+                <div class="option" id="high">High</div>
+              </div>
+            </div>
+          </div>
+          <div class="input-fields">
+            <div class="field">
+              <label for="airtemp"> Air Temperature </label>
+              <div class="field-input">
+                <input type="number" id="airTemp" name="airtemp" />
+                <span class="unit">c</span>
+              </div>
+            </div>
+            <div class="field">
+              <label for="processTemp"> Process Temperature </label>
+              <div class="field-input">
+                <input type="number" id="processTemp" name="processTemp" />
+                <span class="unit">c</span>
+              </div>
+            </div>
+            <div class="field">
+              <label for="rotateSpeed"> Rotational Speed </label>
+              <div class="field-input">
+                <input type="number" id="rotateSpeed" name="rotateSpeed" />
+                <span class="unit">rpm</span>
+              </div>
+            </div>
+            <div class="field">
+              <label for="torque"> Torque </label>
+              <div class="field-input">
+                <input type="number" id="torque" name="torque" />
+                <span class="unit">Nm</span>
+              </div>
+            </div>
+            <div class="field">
+              <label for="toolWear"> Tool wear </label>
+              <div class="field-input">
+                <input type="number" id="toolWear" name="toolWear" />
+                <span class="unit">min</span>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="submit-section">
+            <button type="submit" id="submit-btn">
+              Predict 
+            </button>
+          </div>
+        </div>
+      </div>
+      </form>
+    </div>
+  </body>
+  <script src="js/selector.js"></script>
+</html>
