@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/navigation.css" />
+    <link rel="stylesheet" href="./css/dashboard.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <script src="
+    https://cdn.jsdelivr.net/npm/chart.js@4.3.0/dist/chart.umd.min.js
+    "></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="branding">InsightX</div>
+        <ul class="navlist">
+          <li class="navitem"><a href="index.html">Home</a></li>
+          <li class="navitem"><a href="aboutUs.html">About</a></li>
+          <li class="navitem"><a href="contactUs.html">Contact Us</a></li>
+          <li class="navitem"><a href="explore.html">Explore</a></li>
+          <li class="userlistactionlist">
+            <a href="signup.html" class="userAction" id="signup">Sign Up</a>
+          </li>
+          <li class="userlistactionlist">
+            <a href="login.html" class="userAction">Login</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+    <div class="page">
+      <div class="head">
+        <div class="head-title">
+          <h1>Arc Reactor</h1>
+          <p>Thursday 13 July 2023</p>
+        </div>
+        <a href="history.html">
+          <div class="history">
+            <img src="./img/recent.png" alt="" />
+            Recent
+          </div>
+        </a>
+      </div>
+      <div class="status">
+        <div class="status-card" id="no-failure">
+          <h3>No Failure Rate</h3>
+          <h2>10%</h2>
+        </div>
+        <div class="status-card" id="power-failure">
+          <h3>Power Failure Rate</h3>
+          <h2>10%</h2>
+        </div>
+        <div class="status-card" id="heat-dissipation">
+          <h3>Heat Disssipation Failure Rate</h3>
+          <h2>75%</h2>
+        </div>
+        <div class="status-card" id="tool-wear">
+          <h3>Tool Wear Failure Rate</h3>
+          <h2>10%</h2>
+        </div>
+        <div class="status-card" id="overstrain-failure">
+          <h3>Overstrain Failure Rate</h3>
+          <h2>10%</h2>
+        </div>
+      </div>
+      <div class="details">
+        <div class="bargraph">
+          <canvas id="bargraph"> </canvas>
+        </div>
+        <div class="doughnutgraph">
+          <div class="graph">
+            <canvas id="doughnutgraph"> </canvas>
+          </div>
+          <div class="legends">
+            <div class="legend">
+              <div class="color nofailurecolor"></div>
+              <div class="label">No Failure</div>
+            </div>
+            <div class="legend">
+              <div class="color powerfailurecolor"></div>
+              <div class="label">Power Failure</div>
+            </div>
+            <div class="legend">
+              <div class="color heatfailurecolor"></div>
+              <div class="label">Heat Disssipation</div>
+            </div>
+            <div class="legend">
+              <div class="color toolwearfailurecolor"></div>
+              <div class="label">Tool Wear</div>
+            </div>
+            <div class="legend">
+              <div class="color overstrainfailurecolor"></div>
+              <div class="label">Overstrain Failure</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer-distributed">
+      <div class="footer-right">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="https://github.com/Saisinare/InsightX" target="_blank"
+          ><i class="fa fa-github"></i
+        ></a>
+      </div>
+      <div class="footer-left">
+        <p class="footer-links">
+          <a class="link-1" href="#">Home</a>
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Explore</a>
+          <a href="#">Use App</a>
+        </p>
+        <p>insightX &copy; 2023</p>
+      </div>
+    </footer>
+  </body>
+  <script src="./js/navigation.js"></script>
+  <script src="js/dashboard.js"></script>
+</html>

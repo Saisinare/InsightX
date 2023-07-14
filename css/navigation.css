@@ -45,6 +45,7 @@ body {
     border-radius: 0.5rem;
     width: 93%;
     background-color: #05060af3;
+    /* background-color: rgb(31, 31, 32);  */
     height: 70px;
     display:flex;
     position: sticky;
@@ -202,6 +203,7 @@ header{
     padding: 0 1rem;
     width: 87vw;
     justify-content: space-between;
+    background-color: #05060af3;
   }
   .hamburger{
 

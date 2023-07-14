@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="/css/history.css" />
+    <link rel="stylesheet" href="/css/navigation.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="branding">InsightX</div>
+        <ul class="navlist">
+          <li class="navitem"><a href="index.html">Home</a></li>
+          <li class="navitem"><a href="aboutUs.html">About</a></li>
+          <li class="navitem"><a href="contactUs.html">Contact Us</a></li>
+          <li class="navitem"><a href="explore.html">Explore</a></li>
+          <li class="userlistactionlist">
+            <a href="signup.html" class="userAction" id="signup">Sign Up</a>
+          </li>
+          <li class="userlistactionlist">
+            <a href="login.html" class="userAction">Login</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+    <div class="page">
+      <div class="heading-history">
+        <h2>Recent Activities</h2>
+      </div>
+      <div class="filters">
+        <form action="">
+          <input type="search" required />
+          <button type="submit" class="submit"><img src="img/search-interface-symbol.png" alt="" class="search"></button>
+        </form>
+      </div>
+      <div class="table">
+        <table id="myTable">
+          <thead>
+            <tr>
+              <th onclick="sortTable(0)">Id <img src="img/arrow-up.png" alt=""><img src="img/down-filled-triangular-arrow.png" alt=""></th>
+              <th onclick="sortTable(1)">Machine Name <img src="img/arrow-up.png" alt=""><img src="img/down-filled-triangular-arrow.png" alt=""></th>
+              <th onclick="sortTable(2)">Test Date <img src="img/arrow-up.png" alt=""><img src="img/down-filled-triangular-arrow.png" alt=""></th>
+              <th onclick="sortTable(3)">Overall Status <img src="img/arrow-up.png" alt=""><img src="img/down-filled-triangular-arrow.png" alt=""></th>
+              <th></th>
+            </tr>
+          </thead>
+            <tr>
+              <td>1</td>
+              <td>Arc Reactor</td>
+              <td>14 Jul 2023</td>
+              <td>Good</td>
+              <td><img src="img/more.png" alt="" class="delete" /></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Bionic Arm</td>
+              <td>16 Jul 2023</td>
+              <td>Excellent</td>
+              <td><img src="img/more.png" alt="" class="delete" /></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Invisibility Cloak</td>
+              <td>18 Jul 2023</td>
+              <td>Outstanding</td>
+              <td><img src="img/more.png" alt="" class="delete" /></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Hoverboard</td>
+              <td>20 Jul 2023</td>
+              <td>Great</td>
+              <td><img src="img/more.png" alt="" class="delete" /></td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Mind-Control Device</td>
+              <td>22 Jul 2023</td>
+              <td>Superb</td>
+              <td><img src="img/more.png" alt="" class="delete" /></td>
+            </tr>            
+        </table>
+      </div>
+    </div>
+  </body>
+  <script src="js/history.js"></script>
+  <script src="./js/navigation.js"></script>
+</html>

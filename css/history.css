@@ -1,0 +1,181 @@
+.page{
+    padding: 0 10vw;
+    padding-top: 15vh;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(54, 51, 51, 0.333);
+    background:black;
+}
+
+.heading-history{
+    padding-top: 3vh;
+    height: 15vh;
+    display: flex;
+    color: #ccc;
+    align-items: center;
+    /* justify-content: ; */
+    width: 100%;
+}
+
+.table {
+    width: 82vw;
+    height: 90vh;
+    background:black;
+    border-radius: 0.3rem;
+    backdrop-filter: blur(7px);
+    box-shadow: 0 .4rem .8rem #0005;
+
+    overflow: hidden;
+}
+*{
+    transition: all ease-in 0.5s;
+}
+table {
+    width: 100%;
+
+}
+
+
+table, th, td {
+    border-collapse: collapse;
+    padding: 1rem;
+    text-align: left;
+}
+td{
+    padding: 0.2rem 1rem;
+}
+thead th {
+    position: sticky;
+    top: 0;
+    color: #ccc;
+    left: 0;
+    background-color: #09090afe;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+thead th img{
+    height: 0.5rem;
+}
+tbody tr {
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
+    background-color: rgba(54, 51, 51, 0.333);
+    color: #5a5757;
+    --delay: .1s;
+    transition: all ease-in 0.3s;
+}
+
+tbody tr.hide {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+tbody tr:hover {
+    background-color: #fff6 !important;
+    color: black;
+}
+.delete{
+    padding: 1rem;
+    height: 1rem;
+}
+.delete:hover{
+    background-color: #5a5757;
+}
+tbody tr td,
+tbody tr td p,
+tbody tr td img {
+    transition: .2s ease-in-out;
+}
+
+tbody tr.hide td,
+tbody tr.hide td p {
+    padding: 0;
+    font: 0 / 0 sans-serif;
+    transition: .2s ease-in-out .5s;
+}
+
+tbody tr.hide td img {
+    width: 0;
+    height: 0;
+    transition: .2s ease-in-out .5s;
+}
+
+
+
+@media (max-width: 1000px) {
+    td:not(:first-of-type) {
+        min-width: 12.1rem;
+    }
+}
+
+.filters{
+    height: 10vh;
+    display: flex;
+    justify-content: flex-start;
+    padding-left:18vw;
+    align-items: center;
+    /* width: 10vh; */
+    width:100vw;
+    color: black;
+    margin-bottom: 3vh;
+}
+.filters input {
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 0.2rem;
+    padding: 1rem;
+    color: white;
+    font-family: 'MyFont';
+    background-color: rgb(20, 20, 20);
+    border: none;
+    outline: none;
+}
+.filters form {
+    display: flex;
+    column-gap: 0.3rem;
+}
+.search{
+    height: 1.4rem;
+}
+.submit{
+    border: none;
+    border-radius: 0.3rem;
+    font-family: 'myFont';
+    width: 3.5rem;
+    background-color: rgb(20, 20, 20);
+    cursor: pointer;
+}
+.submit:hover{
+    background-color: blue;
+}
+@font-face {
+    font-family: 'MyFont';
+    src: url('../fonts/GTWalsheimPro-Medium.ttf');
+}
+
+.filters form {
+    width: 80%;
+}
+
+thead th:hover {
+    color: #d8d8f3;
+}
+
+thead th.active span.icon-arrow{
+    background-color: #6c00bd;
+    color: #fff;
+}
+
+
+
+thead th.active,tbody td.active {
+    color: #6c00bd;
+}
+
+
+
+
+

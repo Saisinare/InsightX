@@ -1,0 +1,124 @@
+.page{
+    padding-top: 18vh;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-bottom: 18vh;
+    min-height: 100vh;
+    /* background-color: rgb(31, 31, 32); */
+     /* background-color: rgb(8, 7, 14);  */
+     /* background-color: rgb(4, 0, 255); */
+     background: linear-gradient(35deg,rgb(0, 0, 0),black);
+     color: white;
+}
+.head {
+    color: #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.history{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    column-gap: 0.3rem;
+    padding: 1rem;
+    transition: all 0.5s ease-in-out;
+    border-radius: 1rem;
+}
+.history:hover{
+    background-color: #10161f;
+}
+.head a {
+    text-decoration: none;
+    color:#ccc;
+}
+.head p {
+    color: #706e6e;
+}
+.status{
+    height: 30vh;
+    display: flex;
+    justify-content: space-between;
+}
+.status-card{
+    padding: 1rem;
+    width: 17%;
+    height: 75%;
+    background-color: rgb(25, 25, 27);
+    box-shadow:  0 4px 8px 0 rgba(13, 13, 44, 0.596), 0 6px 20px 0 rgba(16, 14, 29, 0.507);
+    border-radius: 0.3rem;
+}
+.details{
+    height: 60vh;
+    color: rgb(14, 199, 97);
+    display: flex;
+    justify-content: space-between;
+}
+.details .bargraph {
+    padding: 1%;
+    border-radius: 0.3rem;
+    width: 55%;
+    height: 50vh;
+    background-color: rgb(25, 25, 27);
+    box-shadow:  0 4px 8px 0 rgba(13, 13, 44, 0.596), 0 6px 20px 0 rgba(16, 14, 29, 0.507);
+}
+.details .doughnutgraph{
+    padding: 1rem;
+    height: 50vh;
+    border-radius: 0.3rem;
+    width: 39%;
+    background-color: rgb(25, 25, 27);
+    /* background-color: rgb(27, 25, 27); */
+    /* background-color: white; */
+    box-shadow:  0 4px 8px 0 rgba(13, 13, 44, 0.596), 0 6px 20px 0 rgba(16, 14, 29, 0.507);
+    display: flex;
+    justify-content: center;
+}
+.doughnutgraph .graph{
+    height: 90%;
+    width: 60%;
+}
+h3{
+    color: #ccc;
+}
+.legends{
+    height: auto;
+    width: 30%;
+    margin-left: 3rem;
+}
+.legend{
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.color{
+    width: 1rem;
+    height: 40%;
+}
+.label{
+    margin-left: 1rem;
+    color: #a3a1a1;
+    font-size: 12px;
+}
+.nofailurecolor{
+background-color: #ffc154;
+}
+.powerfailurecolor{
+    
+    background-color: orangered;
+}
+.heatfailurecolor{
+    background-color: #47b39c;
+    
+}
+.toolwearfailurecolor{
+    background-color: #4F3F70;
+    
+}
+.overstrainfailurecolor{
+    background-color: #1F75FE;
+}
+
